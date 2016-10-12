@@ -46,19 +46,19 @@ map.on('load', function () {
         type: 'geojson',
         data: 'polls.geojson'
     });
-    // map.addLayer({
-    //     'id': 'polls',
-    //     'type': 'circle',
-    //     'source': 'polls',
-    //     'layout': {
-    //         'visibility': 'visible'
-    //     },
-    //     'paint': {
-    //         'circle-radius': 8,
-    //         'circle-color': 'rgba(55,148,179,1)'
-    //     },
-    //     'source-layer': 'polls'
-    // });
+    map.addLayer({
+        'id': 'polls',
+        'type': 'circle',
+        'source': 'polls',
+        'layout': {
+            'visibility': 'visible'
+        },
+        'paint': {
+            'circle-radius': 8,
+            'circle-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'polls'
+    });
 });
 
 var geocoder = new mapboxgl.Geocoder({
