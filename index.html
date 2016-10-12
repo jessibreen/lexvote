@@ -48,15 +48,16 @@ map.on('load', function () {
     });
     map.addLayer({
         'id': 'polls',
-        'type': 'circle',
+        'type': 'symbol',
         'source': 'polls',
         'layout': {
-            'visibility': 'visible'
+            'visibility': 'visible',
+            "icon-image": "noun_287_cc"
         },
-        'paint': {
-            'circle-radius': 8,
-            'circle-color': 'rgba(55,148,179,1)'
-        },
+        // 'paint': {
+        //     'circle-radius': 8,
+        //     'circle-color': 'rgba(55,148,179,1)'
+        // },
         'source-layer': 'polls'
     });
 });
