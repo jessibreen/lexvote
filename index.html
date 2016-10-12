@@ -44,7 +44,7 @@ var map = new mapboxgl.Map({
 map.on('load', function () {
     map.addSource('polls', {
         type: 'geojson',
-        data: 'https://github.com/jessibreen/lexvote/blob/master/polls.geojson'
+        data: 'polls.geojson'
     });
     // map.addLayer({
     //     'id': 'polls',
