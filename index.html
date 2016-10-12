@@ -84,11 +84,15 @@ map.on('load', function() {
 
     map.addLayer({
         "id": "point",
+        "type": "symbol",
         "source": "single-point",
-        "type": "circle",
-        "paint": {
-            "circle-radius": 10,
-            "circle-color": "#007cbf"
+        "layout": {
+            "icon-image": "{icon}-15"
+        }
+        
+        // "paint": {
+        //     "circle-radius": 10,
+        //     "circle-color": "#007cbf"
         }
     });
 
